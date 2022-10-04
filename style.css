@@ -1,0 +1,201 @@
+body {
+
+    background-color: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 20px;
+
+
+}
+
+
+
+.main {
+
+    width: 70%;
+}
+
+.mainsection {
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+
+
+.firstpartbody {
+    background-color: white;
+    padding: 30px;
+
+}
+
+.player {
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+
+
+
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #562EFF;
+    margin-bottom: 30px;
+}
+
+
+.players {
+
+    display: flex;
+}
+
+.players img {
+
+    height: 56px;
+    width: 56px;
+}
+
+.playertext {
+
+    margin-left: 1em;
+}
+
+.divider hr {
+
+    border-top: 2px solid gray;
+}
+
+.blogs {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 26px;
+    column-gap: 79px;
+
+}
+
+
+.singleblog {
+
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.blogimage img {
+    height: 127px;
+    width: 224px;
+
+}
+
+.blogtitle {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.secondsection {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+    padding: 30px;
+}
+
+/*---------------------------------------------
+media Query for small device 
+------------------------*/
+@media screen and (max-width: 576px) {
+
+    .player {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .blogs {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+
+    .secondsection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+    }
+
+    .singleblog {
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+    }
+
+    .main {
+
+        width: 70%;
+    }
+
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 920px) {
+
+    .player {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .blogs {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+    .secondsection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+    }
+
+    .singleblog {
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+    }
+
+    .main {
+
+        width: 70%;
+    }
+
+
+
+}
